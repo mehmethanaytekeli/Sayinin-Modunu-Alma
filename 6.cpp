@@ -11,15 +11,13 @@ int main() {
     scanf("%d", &y);
 
     z = 12;
-
     c = a + b;
-    k = c / z;
-    d = k * z;
-    h = c - d;
-    mod = c % z;
+
+
     if (y == 2) {
         if (c >= 12) {
-            printf("Kalan: %d\n", h);
+            mod = c % z;
+            printf("Kalan: %d\n", mod);
             printf("***********************************\n");
         }
         else {
@@ -29,7 +27,10 @@ int main() {
     }
     else if (y == 1) {
         if (c >= 12) {
-            printf("Kalan: %d\n", mod);
+            k = c / z;
+            d = k * z;
+            h = c - d;
+            printf("Kalan: %d\n", h);
             printf("***********************************\n");
         }
         else {
@@ -39,6 +40,7 @@ int main() {
     }
     else {
         printf("Hatali Islem Yaptiniz !\n");
+        printf("***********************************\n");
     }
     return 0;
 }
