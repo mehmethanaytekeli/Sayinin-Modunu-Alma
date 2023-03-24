@@ -18,11 +18,9 @@ int main() {
         if (c >= 12) {
             mod = c % z;
             printf("Kalan: %d\n", mod);
-            printf("***********************************\n");
         }
         else {
             printf("Girilen Degerlerin Toplami 12 den Kucuk!\n");
-            printf("***********************************\n");
         }
     }
     else if (y == 1) {
@@ -31,17 +29,16 @@ int main() {
             d = k * z;
             h = c - d;
             printf("Kalan: %d\n", h);
-            printf("***********************************\n");
         }
         else {
             printf("Girilen Degerlerin Toplami 12 den Kucuk!\n");
-            printf("***********************************\n");
         }
     }
     else {
         printf("Hatali Islem Yaptiniz !\n");
-        printf("***********************************\n");
     }
+
+    printf("***********************************\n");
     return 0;
 }
 
